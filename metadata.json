@@ -1,0 +1,6 @@
+{
+  "name": "자본주의 랩 (Capitalism Lab)",
+  "description": "2022 개정 교육과정 고등학교 통합사회2 '자본주의의 역사적 전개 과정과 특징'을 탐구하는 교사 주도형 인터랙티브 역사 경제 시뮬레이터",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

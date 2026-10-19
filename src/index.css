@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  }
+}
+
+/* Custom smooth pulse and wave keyframes for the diorama */
+@keyframes seaWave {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(3px) scaleY(1.02);
+  }
+}
+
+@keyframes gentleSway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1.8deg);
+  }
+}
+
+@keyframes steamPuff {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0) scale(0.7);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-28px) scale(1.6);
+  }
+}
+
+@keyframes gearRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes coinShimmer {
+  0%, 100% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 2px rgba(251, 191, 36, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.9));
+  }
+}
+
+.animate-sea-wave {
+  animation: seaWave 4s ease-in-out infinite;
+}
+
+.animate-gentle-sway {
+  animation: gentleSway 5s ease-in-out infinite;
+}
+
+.animate-steam {
+  animation: steamPuff 2.4s ease-out infinite;
+}
+
+.animate-gear-spin {
+  animation: gearRotate 6s linear infinite;
+}
+
+.animate-gear-reverse {
+  animation: gearRotate 6s linear infinite reverse;
+}
+
+.animate-coin-shimmer {
+  animation: coinShimmer 2s ease-in-out infinite;
+}
